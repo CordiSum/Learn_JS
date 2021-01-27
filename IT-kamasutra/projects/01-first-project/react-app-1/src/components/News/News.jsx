@@ -1,10 +1,10 @@
-import s from './Music.module.css'
+import s from './News.module.css'
 
-const Music = (props) => {
+const News = (props) => {
     return (
         <div>
-            Music
+            News
         </div>
     )
 }
-export default Music;
+export default News;

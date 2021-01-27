@@ -1,0 +1,99 @@
+.page-wrapper {
+		background-color: rgb(170, 170, 170);
+		padding: 50px 100px;
+
+
+		.container {
+			display: flex;
+			flex-direction: row;
+		}
+
+		h1 {
+			font-size: 46px;
+			color: rgb(3, 25, 39);
+			display: block;
+			width: 100%;
+			font-weight: 800;
+
+		}
+		main {
+				width: 80%;
+		}		
+		aside {
+				width: 19%
+		}
+
+		nav {
+			padding: 20px;
+		}
+
+		.start {
+			background-color: #79c780;
+			padding: 10px;
+		}
+
+		.new-game {
+			background-color: #509fb3;
+			padding: 10px;
+		}
+		.points {
+			display: inline-block;
+			padding: 10px;
+			background-color: #9bd3e0;
+		}
+		.timer-wrap {
+			display: inline-block;
+			padding: 10px;
+			background-color: #f5e2d2;
+		}
+
+		.playing-field {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 800px;
+			background-color: rgb(219, 210, 197);
+		}
+
+		.title-top {
+			padding: 30px;
+			font-size: 24px;
+			color: rgb(39, 79, 82);
+		}
+
+		.table-top {
+			color: #fff;
+			background-color: rgb(39, 79, 82);
+		}
+
+		.square {			
+			width: 30px;
+			height: 30px;
+			margin: 1px;
+			box-shadow: inset rgba(255,255,255,0.2) 8px  8px 18px 5px,
+	            		inset rgba(0,0,0,0.5)      -8px -8px 18px 5px;
+		}
+		.square:hover {			
+			width: 30px;
+			height: 30px;
+			margin: 1px;
+			box-shadow: inset rgba(255,255,255,0.3) 8px  8px 18px 5px,
+	            		inset rgba(0,0,0,0.1)      -8px -8px 18px 5px;
+		}
+
+		.red {
+			background-color: red;
+			cursor: pointer;
+		}
+		.green {
+			background-color: green;
+			cursor: pointer;
+		}
+		.blue {
+			background-color: blue;
+			cursor: pointer;
+		}
+		.transparent {
+			background-color: transparent;
+			box-shadow: none;
+		}
+}
