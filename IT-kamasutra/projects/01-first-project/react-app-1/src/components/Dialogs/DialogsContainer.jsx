@@ -23,7 +23,6 @@ const DialogsContainer = () => {
             }
         }
     </StoreContext.Consumer>
-
-
+    
 }
 export default DialogsContainer;
