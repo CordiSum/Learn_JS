@@ -4,9 +4,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 
-
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
     </head>
     <body>
+
+
+
+
+<div class="filter-brands">
+    <input type="text" id="search">
+        <ul id="results"></ul>
+</div>
         <div class="box">Touch me</div>
 
         <button>push me</button>
@@ -24,6 +32,10 @@
             
         </div>
 
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+
         <style>
             .box {
                 background-color: green;
@@ -31,10 +43,97 @@
                 height: 400px;
                 font-size: 40px;
             }
+            body {
+                background-color:#adbb94
+            }
         </style>
 
-        <!-- <script src="script.js"></script> -->
+        <!-- <script src="script.js"></> -->
         <!-- <script src="script_23.js"></script> -->
-        <script src="script_51-52.js"></script>
+        <script src="script_101-pattern-Module.js"></script>
+        <!-- <script>
+            let list = ['JavaScript', 'Kotlin', 'Rust', 'PHP', 'Ruby', 'Java', 'MarkDown', 'Python', 'C++', 'Fortran',
+                'Assembler'
+            ]
+            const result = document.getElementById('results')
+            renderList(list, result)
+
+            function filter(val, list) {
+                console.time('test')
+                return list.filter(i => (~i.indexOf(val)))
+            };
+
+            function renderList(_list = [], el = document.body) {
+                el.innerHTML = '';
+                _list.forEach(i => {
+                    let new_el = document.createElement('li')
+                    new_el.innerHTML = i
+                    el.appendChild(new_el)
+                })
+                console.timeEnd('test')
+            }
+            document.getElementById('search').addEventListener('input', e => renderList(filter(e.target.value, list),
+                result))
+        </script>
+
+        <script>
+            var yLabels = {
+                0 : 'newb',
+                2 : 'codecademy',
+                4 : 'code-school',
+                6 : 'bootcamp',
+                8 : 'junior-dev',
+                10 : 'mid-level',
+                12 : 'senior-dev',
+                14 : 'full-stack-dev',
+                16 : 'famous-speaker',
+                18 : 'unicorn',
+                20 : 'harambe'
+            }
+
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["HTML", "CSS", "SCSS", "JavaScript"],
+                    datasets: [{
+                        data: [12, 19, 3, 10],
+                        backgroundColor: [
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(255, 206, 86, 0.2)'
+
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)'
+
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+
+                    scales: {
+                        y2: {
+                            type: 'category',
+                            labels: ['ON', 'OFF', 'tt'],
+                        }
+                    }
+                }
+            });
+
+          </script> -->
+          <!-- <script>
+            const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+            );
+          </script> -->
+
+
     </body>
 </html>
