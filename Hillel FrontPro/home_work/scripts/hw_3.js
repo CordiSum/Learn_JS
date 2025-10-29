@@ -1,3 +1,5 @@
+export * from '../main.js'
+
 //Task 1
 console.log(1, typeof 1)
 console.log('Hello', typeof 'Hello')
@@ -24,4 +26,3 @@ const numStr = String(number)
 const arraySplit = numStr.split('')
 const addSpace = arraySplit.join(' ')
 console.log(addSpace)
-
