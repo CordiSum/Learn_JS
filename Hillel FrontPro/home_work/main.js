@@ -3,5 +3,6 @@
 // import "./scripts/hw_5.js"
 // import "./scripts/hw_6.js"
 // import "./scripts/hw_7.js"
-import "./scripts/hw_8.js"
+// import "./scripts/hw_8.js"
+import "./scripts/hw_9.js"
 
