@@ -1,3 +1,7 @@
+//Task 10
+// Об'єкт може містити невідому кількість департаментів та співробітників
+// Дізнатись суму всіх зарплат користувачів:
+
 function getTotalSalary(data) {
   if (Array.isArray(data)) {
     return data.reduce((sum, departament) =>  sum + departament.salary, 0)
