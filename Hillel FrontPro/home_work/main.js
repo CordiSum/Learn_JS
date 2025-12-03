@@ -4,5 +4,7 @@
 // import "./scripts/hw_6.js"
 // import "./scripts/hw_7.js"
 // import "./scripts/hw_8.js"
-import "./scripts/hw_9.js"
+// import "./scripts/hw_9.js"
+// import "./scripts/hw_10.js"
+import "./scripts/hw_11.js"
 

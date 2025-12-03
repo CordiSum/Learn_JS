@@ -2,3 +2,17 @@ body {
   background-color: black;
   color: white;
 }
+
+.active {
+  color: red;
+}
+
+tr, td {
+  background-color: grey;
+  padding: 5px;
+  text-align: center;
+}
+table td:first-child,
+table tr:first-child td {
+  background-color: green;
+}
