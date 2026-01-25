@@ -21,7 +21,6 @@ Student.prototype.present = function() {
   for (let i = 0; i < this.attendance.length; i++) {
     if (!(i in this.attendance)) {
       this.attendance[i] = true
-    } else {
       return
     }
   }
@@ -31,7 +30,6 @@ Student.prototype.absent = function() {
   for (let i = 0; i < this.attendance.length; i++) {
     if (!(i in this.attendance)) {
       this.attendance[i] = false
-    } else {
       return
     }
   }
@@ -50,7 +48,7 @@ const avgAttendance = total === 0 ? 0 : attended / total
 }
 
 const s1 = new Student("Петя", "Короткослав", 2002, [99, 99, 99])
-const s2 = new Student("Федя", "Длиннослав", 2001, [80, 92, 96])
+const s2 = new Student("Федя", "Длиннослав", 2001, [90, 90, 96])
 const s3 = new Student("Иван", "Длиннослав", 2003, [70, 65, 80])
 
 s1.present()
@@ -66,10 +64,6 @@ s2.absent()
 s3.absent()
 s3.present()
 
-console.log(s1.summary(), "s1") 
-console.log(s2.summary(), "s2") 
-console.log(s3.summary(), "s3") 
-
-console.log(s1.name, s1.getAge(), s1.getAverageGrade(), s1.attendance, s1.summary())
-console.log(s2.name, s2.getAge(), s2.getAverageGrade(), s2.attendance, s2.summary())
-console.log(s3.name, s3.getAge(), s3.getAverageGrade(), s3.attendance, s3.summary())
+console.log(s1.name, s1.surname, s1.getAge(), s1.getAverageGrade(), s1.attendance, s1.summary())
+console.log(s2.name, s2.surname, s2.getAge(), s2.getAverageGrade(), s2.attendance, s2.summary())
+console.log(s3.name, s3.surname, s3.getAge(), s3.getAverageGrade(), s3.attendance, s3.summary())
