@@ -1,3 +1,5 @@
+import "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+
 // Доробити TODO лист, в якому буде можливість:
 // Додати завдання
 // Видалити завдання
@@ -41,7 +43,7 @@ function onPageLoaded() {
     }
 
     function onClickTodo(event) {
-        if (event.target.tagName === 'LI' || 'SPAN') {
+        if (event.target.tagName === 'LI' || event.target.tagName === 'SPAN') {
             event.target.classList.toggle('checked');
         };
     }
