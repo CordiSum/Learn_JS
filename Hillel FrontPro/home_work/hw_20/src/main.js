@@ -1,4 +1,4 @@
-import "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Доробити TODO лист, в якому буде можливість:
 // Додати завдання
