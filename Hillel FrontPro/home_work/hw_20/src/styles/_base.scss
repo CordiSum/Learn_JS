@@ -1,0 +1,7 @@
+@use "variables" as v;
+
+body .btn-primary{
+  background: v.$bg-color !important;
+  color: v.$text-color;
+  font-family: v.$font-main;
+}
