@@ -10,7 +10,7 @@ router.post("/", (req, res) => {
   if (!title) {
     return res.status(400).json({ message: "Title обязателен" });
   }
-....
+
   const newTodo = {
     id: id++,
     title,
