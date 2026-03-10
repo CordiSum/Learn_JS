@@ -1,0 +1,127 @@
+.votePage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 10px 0 22px;
+}
+
+.emojiRow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin: 10px 0 18px;
+}
+
+.emojiCard {
+  width: 96px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px 4px;
+  transition: transform 120ms ease;
+}
+
+.emojiCard:hover {
+  transform: translateY(-2px);
+}
+
+.emojiIcon {
+  display: block;
+  font-size: 56px;
+  line-height: 1;
+  text-align: center;
+}
+
+.emojiCount {
+  display: block;
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.buttonsRow {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin: 14px 0 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btnPrimary {
+  background: #3aa65b;
+  color: #fff;
+}
+
+.btnPrimary:hover {
+  opacity: 0.95;
+}
+
+.btnGhost {
+  background: #f2f2f2;
+  color: #222;
+}
+
+.btnGhost:hover {
+  opacity: 0.95;
+}
+
+.results {
+  margin-top: 18px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 28px;
+  margin: 12px 0 10px;
+  font-weight: 800;
+}
+
+.winnerLabel {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.winnerEmoji {
+  font-size: 72px;
+  margin: 10px 0 8px;
+}
+
+.winnerCount {
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.emptyState {
+  margin-top: 14px;
+  opacity: 0.75;
+  font-size: 16px;
+}
